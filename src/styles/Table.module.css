@@ -1,0 +1,111 @@
+.tramosTable {
+  width: 80%;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+}
+
+.tableContainer {
+  overflow-x: auto;
+}
+
+.tableContainer::-webkit-scrollbar {
+  height: 5px;
+}
+
+.tableContainer::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.tableContainer::-webkit-scrollbar-thumb {
+  background: #696969;
+  border-radius: 6px;
+}
+
+.tableContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #696969 #f1f1f1;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.header {
+  color: var(--secondary-color);
+}
+
+.cell {
+  font-size: 0.9rem;
+  color: #8797a3;
+}
+
+.cell:first-child {
+  color: #696969;
+}
+
+.header,
+.cell {
+  cursor: pointer;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.bar {
+  width: 80%;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px auto;
+}
+
+.noData {
+  width: 80%;
+  margin: 10px auto;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .tramosTable {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .search {
+    flex-direction: column;
+  }
+
+  .table th {
+    display: none;
+  }
+
+  .table tr {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .table tbody td::before {
+    content: attr(data-header);
+    display: inline-block;
+    width: 100%;
+    font-weight: bold;
+    margin-right: 5px;
+    color: var(--secondary-color);
+  }
+
+  .bar {
+    width: 100%;
+    padding: 0 15px;
+  }
+}

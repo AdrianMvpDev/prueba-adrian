@@ -1,0 +1,39 @@
+.sortComponent {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sortDropdown {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+#sortSelect {
+  padding: 9px;
+  border-radius: 7px;
+  color: #696969;
+  border: 1px solid #ddd;
+}
+
+#sortSelect:focus-visible {
+  outline: none;
+}
+
+.sortLabel {
+  color: var(--secondary-color);
+  font-weight: 500;
+}
+
+.iconFilter {
+  color: var(--primary-color);
+}
+
+.directionIcon {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.disabledSelect {
+  background-color: #696969;
+}

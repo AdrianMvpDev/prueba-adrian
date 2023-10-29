@@ -1,0 +1,12 @@
+/* Estilos para el pie de pagina principal */
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #36a581;
+  padding: 30px;
+}
+
+/* Estilos para el text del pie de pagina */
+.footerText {
+  color: white;
+}

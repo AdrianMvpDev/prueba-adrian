@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  width: 80%;
+  margin: 20px auto;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  gap: 10px;
+}
+
+.welcomeText {
+  max-width: 430px;
+}
+
+.greenText {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  display: inline;
+  margin-right: 10px;
+}
+
+.welcome h2 {
+  color: var(--secondary-color);
+  font-size: 2.5rem;
+  display: inline;
+}
+
+.textDescription {
+  color: #7f919c;
+  max-width: 430px;
+  font-size: 0.9rem;
+}
+
+.button {
+  background: #ed6359;
+  color: white;
+  width: 100%;
+  max-width: 95px;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.button:hover{
+  opacity: 0.8;
+}
+
+.lottieContainer {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 15px;
+  }
+  .welcome {
+    width: 80%;
+  }
+  .lottieContainer {
+    width: 100%;
+    padding: 0 15px;
+  }
+}

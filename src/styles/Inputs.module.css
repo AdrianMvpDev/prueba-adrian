@@ -1,0 +1,30 @@
+.inputContainer {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.input {
+  padding: 10px 30px 10px 10px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  color: #696969;
+  width: 100%;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  font-size: 14px;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .inputContainer {
+    max-width: 100%;
+  }
+}

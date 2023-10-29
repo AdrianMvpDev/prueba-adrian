@@ -1,0 +1,64 @@
+@import 'variables.css';
+/* Estilos globales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+/* Estilos para etiquetas a */
+a {
+  text-decoration: none;
+  color: white;
+}
+/* Estilo input quitar borde*/
+input:focus-visible {
+  outline: none;
+}
+
+/* Estilo para calendario*/
+.react-datepicker__header {
+  background-color: var(--primary-color);
+  border-bottom: 1px solid white;
+}
+
+.react-datepicker-popper[data-placement^='bottom'] .react-datepicker__triangle::after {
+  border-bottom-color: var(--primary-color);
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: white;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header,
+.react-datepicker__day-name,
+.react-datepicker__time-name {
+  color: white;
+}
+
+.react-datepicker__day--in-selecting-range:hover,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #696969;
+  border-radius: 6px;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #696969 #f1f1f1; /* Color de la barra de desplazamiento */
+}
