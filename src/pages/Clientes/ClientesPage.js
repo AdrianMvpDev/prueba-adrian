@@ -34,8 +34,6 @@ export default function ClientesPage() {
       });
   };
 
-  console.log(clientData);
-
   return (
     <div>
       <Header />

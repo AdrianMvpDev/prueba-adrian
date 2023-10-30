@@ -34,8 +34,6 @@ export default function TramosClientePage() {
       });
   };
 
-  console.log(tramosClienteData);
-
   return (
     <div>
       <Header />
